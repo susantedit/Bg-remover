@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG-remover-by susant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Black one.jpg" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="logo">
+        <img src="op.svg" alt="">
+        <h1>Remove-Bg</h1>
+    </div>
+
+    <div class="main">
+        <div class="style1">
+            <div class="image">
+                <div class="image1">
+                    <img src="Withh.jpg" id="withbg">
+                </div>
+                <div class="image2">
+                    <img src="Withhout.png" id="withoutbg">
+                </div>
+            </div>
+            <div class="text">
+                Remove image bg and download it in PNG easy to use no limit so start having fun
+            </div>
+        </div>
+        <div class="style2">
+            <div class="upload-image">
+                <div class="inner-upload-image">
+                    <img src="" id="input-image">
+                    <input type="file" id="filepicker" hidden>
+                    <img src="add.svg" id="icon" alt="">
+                    <span>Upload-Image</span>
+                </div>
+                <button id="upload-btn"> Upload Image </button>
+            </div>
+            <img src="loading.gif" id="loading" alt="" width="100px">
+        </div>
+        <div class="result">
+            <div class="mainbox">
+                <div class="resultImg1">
+                    <img src="" alt="">
+                </div>
+                <div class="resultImg2">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="btns">
+                <button id="download">Download it in png </button>
+                <button id="reset">Reset </button>
+            </div>
+        </div>
+
+    </div>
+   <footer class="site-footer">
+    <div class="footer-wave-floating">
+        <svg viewBox="0 0 1440 90" class="footer-top-wave" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="footerWaveGradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#a788ff" />
+                    <stop offset="50%" stop-color="#7226ff" />
+                    <stop offset="100%" stop-color="#160078" />
+                </linearGradient>
+                <filter id="waveDropShadow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#7226ff" flood-opacity="0.24" />
+                </filter>
+            </defs>
+            <path d="M0,60 Q360,10 720,60 T1440,60 L1440,0 L0,0 Z"
+                fill="url(#footerWaveGradient)" filter="url(#waveDropShadow)" />
+        </svg>
+    </div>
+    <div class="footer-container">
+        <div class="footer-brand-social">
+            <div class="footer-brand">
+                <img src="op.svg" alt="Remove-Bg Logo" class="footer-logo">
+                <span id="me">Remove-Bg by Susant</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/kantarajluitel" target="_blank" title="Facebook"
+                    class="footer-icon facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#1877f2"
+                            d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.16 8.44 9.93v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.22.2 2.22.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3v7.03C18.34 21.23 22 17.09 22 12.07z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/susantgamerz" target="_blank" title="Instagram"
+                    class="footer-icon instagram">
+                    <svg viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="ig-gradient" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#fdf497" />
+                                <stop offset="5%" stop-color="#fdf497" />
+                                <stop offset="45%" stop-color="#fd5949" />
+                                <stop offset="60%" stop-color="#d6249f" />
+                                <stop offset="90%" stop-color="#285AEB" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#ig-gradient)"
+                            d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.68 3.5 4 5.18 4 7.25v9.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/susantedit" target="_blank" title="X" class="footer-icon x">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M21.54 3H17.7l-5.48 7.76-5.2-7.76H2.46L9.43 12l-6.97 9h3.84l5.28-7.36L17.66 21h3.88l-7.04-9z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@Vortexeditzzzzz" target="_blank" title="YouTube"
+                    class="footer-icon youtube">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#ff0000"
+                            d="M21.8 8.001a2.749 2.749 0 0 0-1.94-1.94C18 5.5 12 5.5 12 5.5s-6 0-7.86.56A2.749 2.749 0 0 0 2.2 8.001C1.64 9.86 1.63 12 1.63 12s0 2.14.57 3.999a2.75 2.75 0 0 0 1.94 1.94C6 18.5 12 18.5 12 18.5s6 0 7.86-.56a2.75 2.75 0 0 0 1.94-1.94c.57-1.86.57-3.999.57-3.999s0-2.14-.57-3.999zM10 15.5V8.5l6.5 3.5-6.5 3.5z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/susantedit" target="_blank" title="GitHub" class="footer-icon github">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#181717"
+                            d="M12 2C6.48 2 2 6.48 2 12.07c0 4.44 2.87 8.2 6.84 9.53.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.26-4.56-1.12-4.56-4.97 0-1.1.39-2 .1-2.71 0 0 .83-.27 2.74 1.02A9.54 9.54 0 0 1 12 7.13c.84.004 1.68.113 2.47.33 1.91-1.29 2.73-1.02 2.73-1.02.29.71.1 1.61.05 1.78.64.71 1.02 1.61 1.02 2.71 0 3.86-2.34 4.7-4.57 4.96.36.31.69.92.69 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.07C22 6.48 17.52 2 12 2z" />
+                    </svg>
+                </a>
+                <a href="https://t.me/Susanteditz" target="_blank" title="Telegram" class="footer-icon telegram">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#229ed9"
+                            d="M21.05 2.29 2.34 9.16c-1.25.45-1.24 1.1-.22 1.39l4.25 1.33 2.23 6.79c.28.86.55 1.07 1.12 1.07.36 0 .62-.17.86-.37l2.08-2.02 4.32 3.2c.8.45 1.37.22 1.56-.74l2.83-13.05c.28-1.22-.46-1.78-1.32-1.47zm-2.31 3.62-7.1 6.06c-.14.12-.29.34-.34.54l-.51 1.84c-.08.29.08.41.33.27l1.24-.78 2.56 1.93c.12.09.28.04.32-.1l1.76-6.61c.04-.14-.09-.24-.25-.15z" />
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@vortexeditz34" target="_blank" title="TikTok"
+                    class="footer-icon tiktok">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M12.71 2.25c.72 0 1.3.58 1.3 1.3v13.89a3.11 3.11 0 1 1-3.11-3.11c.41 0 .73.33.73.73v0c0 .41-.33.73-.73.73a1.65 1.65 0 1 0 1.65 1.65V3.55c0-.72.58-1.3 1.3-1.3zm6.77 5.12c.41 0 .73.33.73.73s-.33.73-.73.73H17.1v1.46c0 .41-.33.73-.73.73s-.73-.33-.73-.73v-1.46h-1.46c-.41 0-.73-.33-.73-.73s.33-.73.73-.73h1.46V5.91c0-.41.33-.73.73-.73s.73.33.73.73v1.46h1.46zm-2.19 5.6a.73.73 0 1 1 0 1.46.73.73 0 0 1 0-1.46z" />
+                    </svg>
+                </a>
+                <a href="https://discord.gg/ZzytUMjY" target="_blank" title="Discord"
+                    class="footer-icon discord">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#5865f2"
+                            d="M20.31 4.37A19.91 19.91 0 0 0 16.65 3c-.23-.14-.47-.25-.71-.34A19.4 19.4 0 0 0 12 2.5c-1.67 0-3.33.19-4.94.55-.24.09-.48.2-.71.34a19.91 19.91 0 0 0-3.66 1.37C1.19 7.19.18 9.94.18 13.13c0 1.14.12 2.27.36 3.39.14.62.47 1.19.95 1.59 2.42 2.06 7.19 2.89 10.51 2.89s8.09-.83 10.51-2.89c.48-.4.81-.97.95-1.59.24-1.12.36-2.25.36-3.39 0-3.19-1.01-5.94-2.49-8.76zM8.91 14.86c-.81 0-1.48-.81-1.48-1.8s.66-1.8 1.48-1.8c.81 0 1.48.81 1.48 1.8s-.67 1.8-1.48 1.8zm6.18 0c-.81 0-1.48-.81-1.48-1.8s.67-1.8 1.48-1.8c.81 0 1.48.81 1.48 1.8s-.67 1.8-1.48 1.8z" />
+                    </svg>
+                </a>
+                <a href="mailto:susantedit@gmail.com" class="footer-icon email" title="Email">
+                    <svg width="24" height="24" viewBox="0 0 48 48" aria-hidden="true">
+                        <path fill="#fff"
+                            d="M6 12a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6z" />
+                        <path fill="#ea4335"
+                            d="M42 12v24a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6V12h3v2.5l15 11.9 15-11.9V12z" />
+                        <path fill="#c5221f"
+                            d="M24 27.4 8.6 15.6l-.6.4v20a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V16l-.6-.4z" />
+                        <path fill="#fbbc04" d="M6 12l18 14.3L42 12h-7.2l-10.8 8.6L13.2 12z" />
+                        <path fill="#34a853" d="M42 12l-18 14.3L6 12h7.2l10.8 8.6L34.8 12z" />
+                        <path fill="#4285f4" d="M24 27.4 6 12v24a6 6 0 0 0 6 6h24a6 6 0 0 0 6-6V12z"
+                            fill-opacity=".1" />
+                    </svg>
+                </a>
+                <a href="tel:+9708838261" class="footer-icon phone" title="+9708838261">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#22c55e"
+                            d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.59.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.29 21 3 13.71 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.2 2.47.57 3.59a1 1 0 0 1-.24 1l-2.2 2.2z" />
+                    </svg>
+                    <span class="phone-number">+9708838261</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2025 Remove-Bg by Susant. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
